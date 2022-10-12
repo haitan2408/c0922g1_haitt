@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // for (let i = 0; i < 30; i++) {
+    //     document.writeln("Hello ");
+    // }
+
+    // let height = 0;
+    // while (height < 1.7) {
+    //     height = prompt("Mời bạn nhập  chiều cao: ");
+    // }
+    // alert(height)
+    //
+    // do {
+    //     height = prompt("Mời bạn nhập  chiều cao: ");
+    // } while (height < 1.7);
+
+    // let height = prompt("Mời bạn nhập chiều cao: ");
+    // while(height<1.7) {
+    //     alert("Người dùng cần nhập chiều cao lớn 1.7");
+    //     height = prompt("Mời bạn nhập lại chiều cao: ");
+    // }
+    // alert(height)
+    // let height;
+    // do {
+    //     height = prompt("Mời bạn nhập chiều cao: ");
+    //     if (height < 1.7) {
+    //         alert("Người dùng cần nhập chiều cao lớn 1.7");
+    //     }
+    // } while (height < 1.7);
+
+    for (let i = 0; i < 5; i++) {
+        let height = prompt("Mời bạn nhập chiều cao: ");
+        if(height >=1.7) {
+            break;
+        }
+    }
+    let i;
+    for (let i = 0; i < 5; i++) {
+        let height = prompt("Mời bạn nhập chiều cao: ");
+        if(height < 1.7) {
+            continue;
+        }
+        alert(height);
+    }
+</script>
+</body>
+</html>
