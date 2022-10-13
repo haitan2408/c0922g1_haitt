@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 2;
+    let a = 0;
+    let b = 1;
+    let c;
+    while (count < 64) {
+        c = a + b;
+        document.writeln(c);
+        a = b;
+        b = c;
+        count++;
+    }
+</script>
+</body>
+</html>
