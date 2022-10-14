@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayOfStudentC09 = ["Nam", "Quốc", "Thảo", "Khải", "Hùng"];
+    let arr2 = new Array("Vũ", "Quỳnh");
+    arrayOfStudentC09.push("Quân");
+
+    // for (let i = 3; i>=0; i --) {
+    //     console.log(arrayOfStudentC09[i]);
+    // }
+    // document.writeln(arrayOfStudentC09);
+    // for(let i in arrayOfStudentC09) {
+    //     document.writeln(i);
+    // }
+
+    //Xóa từ index = 4 và xóa 2 phần tử
+   // arrayOfStudentC09.splice(4,2);
+
+   //Chèn chuỗi Thành vào vị trí index  = 4;
+   arrayOfStudentC09.splice(4,0, "Thành")
+    for (let item of arrayOfStudentC09) {
+        document.writeln(item)
+    }
+    // arrayOfStudentC09.sort();
+    // for (let item of arrayOfStudentC09) {
+    //     document.writeln(item)
+    // }
+
+    // let arrayOfStudentC09 = [["Nam", "Khánh"], ["Hậu", "Hùng", "Vũ", "Double Vũ"]];
+    // for (let i = 0 ; i< arrayOfStudentC09.length; i++) {
+    //     for ( let j =0; j< arrayOfStudentC09[i].length; j++) {
+    //         document.writeln(arrayOfStudentC09[i][j]);
+    //     }
+    //     document.writeln("<br>")
+    // }
+    //
+    // for (let item of arrayOfStudentC09) {
+    //     for (let temp of item) {
+    //         document.writeln(temp);
+    //     }
+    //     document.writeln("<br>")
+    // }
+</script>
+</body>
+</html>
