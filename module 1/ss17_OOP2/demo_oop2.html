@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Student {
+        constructor(codeStudent, nameStudent, dateOfBirth, email, address) {
+            this.codeStudent = codeStudent;
+            this.nameStudent = nameStudent;
+            this.dateOfBirth = dateOfBirth;
+            this.email = email;
+            this.address = address;
+        }
+        getNameStudent() {
+            if(true) {
+                return this.nameStudent
+            } else {
+                return "Không được phép"
+            }
+        }
+
+        writeNoteBook() {
+            console.log("Chép bài vào vở.")
+        }
+
+        goToSchool() {
+            this.writeNoteBook();
+            console.log("Đi học đúng giờ");
+        }
+        getInfoAndChangeEmail() {
+            return this.codeStudent+","+this.nameStudent;
+        }
+    }
+
+    let arrOfStudentC09 = [];
+    let thao = new Student(1, "Thanh Thảo", "N/A", "N/A", "Hồ Chí Minh city");
+    let quynh = new Student(2, "Diệu Quỳnh", "N/A", "N/A", "N/A");
+    arrOfStudentC09.push(quynh);
+    arrOfStudentC09.push(thao);
+    thao.email ="thao.abc@gmail.com";
+    alert(thao.nameStudent)
+</script>
+</body>
+</html>

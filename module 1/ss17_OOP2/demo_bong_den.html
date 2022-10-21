@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+        turnOn() {
+            this.status = true;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+    }
+
+    class SwitchButton {
+        constructor(status, electricLamp) {
+            this.status = status;
+            this.electricLamp = electricLamp;
+        }
+
+        //Bóng đèn hư thì coonect tới 1 bóng đèn khác
+        connectToLamp(electricLamp2) {
+            this.electricLamp = electricLamp2;
+        }
+
+        switchOn() {
+            this.status = true;
+            this.electricLamp.turnOn();
+        }
+
+        switchOff() {
+            this.status = false;
+            this.electricLamp.turnOff();
+        }
+    }
+
+    let lamp = new ElectricLamp(false);
+    let button = new SwitchButton(false, lamp);
+    button.switchOn();
+</script>
+</body>
+</html>
